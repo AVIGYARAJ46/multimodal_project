@@ -17,7 +17,7 @@ from youtube_transcript_api import YouTubeTranscriptApi, NoTranscriptFound
 from database import init_db, store_extracted_data, fetch_all_documents_from_db
 
 # --- Configuration ---
-genai.configure(api_key="AIzaSyC_RQBNerLISCMgKXNnDmEQav-f8FmWyZY")
+genai.configure(api_key="Api_key")
 pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
 
 
@@ -236,3 +236,4 @@ def upload_page():
 if __name__ == "__main__":
     init_db()
     upload_page()
+
